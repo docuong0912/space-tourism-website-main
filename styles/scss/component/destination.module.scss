@@ -1,0 +1,49 @@
+@use '../abstract/index' as i;
+.destination{
+    position: absolute;
+    width: 445px;
+    height: 472px;
+    left: 632px;
+    top: 150px;
+}
+.desName{
+    font-size: 100px !important;
+    line-height: 115px !important;
+}
+.picker{
+    float: right;
+    margin-right: 300px;
+    *{
+        @include i.text("Barlow Condensed",normal,400,map-get($map: i.$font-size, $key: description),uppercase,2.7px);
+        color: white;
+    }
+    line-height: 19px;
+    .planet{
+        display: inline-block;
+        margin: 0 20px;
+        height: 25px;
+        cursor: pointer;
+        
+    }
+    .active{
+        border-bottom: 2px solid white;
+    }
+}
+.subContainer{
+    span:last-of-type{
+        margin-left: 40px;
+    }
+}
+.subInfo{
+    display: inline-block;
+    p{
+        margin-top: 10px;
+    }
+    p:first-of-type{
+        @include i.text("Barlow Condensed",normal,400,map-get($map: i.$font-size, $key: sub-info),uppercase,16.8px)
+    }
+    p:nth-of-type(2){
+        
+        @include i.text('Bellefair',normal,400,map-get($map: i.$font-size, $key: title),uppercase,32.1px);
+    }
+}

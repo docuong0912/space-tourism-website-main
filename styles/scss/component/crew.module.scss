@@ -1,0 +1,31 @@
+.crew{
+    .firstparagraph{
+        font-size: 32px !important;
+        line-height: 37px !important;
+        opacity: 0.5;
+        color: white;
+    }
+    .secondparagraph{
+        font-size: 56px !important;
+        line-height: 64px !important;
+    }
+}
+.btnCrewContainer{
+    position: absolute;
+    width: 132px;
+    height: 15px;
+    left: 167px;
+    bottom: 100px;
+    .btnCrew{
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        display: inline-block;
+        margin: 0 5px;
+        border-radius: 50%;
+        opacity: 0.17;
+    }
+    .active{
+        opacity: 1;
+    }
+}

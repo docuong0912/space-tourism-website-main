@@ -1,0 +1,9 @@
+@use '../abstract/index' as i;
+@mixin bgChange($bg:i.$home,$isMobile:false){
+    background-image: url($bg);
+}
+.body{
+    @include bgChange();
+    width: 100vw;
+    height: 100vh;
+}

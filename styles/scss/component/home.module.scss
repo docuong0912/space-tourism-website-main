@@ -1,0 +1,18 @@
+@use '../abstract/index' as i;
+.btnHome{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    position: absolute;
+    right:100px;
+    bottom: 100px;
+    &:hover{
+        cursor: pointer;
+    }
+    *{
+        @include i.text("Bellefair",normal,400,32px,uppercase,37px);
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: black;
+    }
+}

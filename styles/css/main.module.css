@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.name {
+  font-size: 56px;
+}
+
+.description {
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.techBtn {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: 80px;
+  height: 80px;
+}
+
+.introduction {
+  position: absolute;
+  width: 450px;
+  height: 382px;
+  left: 165px;
+  top: 187px;
+}
+.introduction p:first-of-type {
+  font-size: 28px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+}
+.introduction p:nth-of-type(2) {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 172px;
+  /* identical to box height */
+}
+.introduction p:last-of-type {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+}
+.introduction * {
+  color: white;
+}
+
+.header {
+  width: 95%;
+  height: 96px;
+  margin: auto;
+}
+.header .pattern {
+  display: inline-block;
+  width: 473px;
+  height: 1px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  position: absolute;
+  top: 55px;
+  left: 167px;
+  z-index: 2;
+}
+
+.navLink {
+  position: relative;
+  z-index: 1;
+  width: 830px;
+  height: 96px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navLink .navEl {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navLink .navEl * {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.body {
+  background-image: url("../../../starter-code/assets/home/background-home-desktop.jpg");
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=main.module.css.map */

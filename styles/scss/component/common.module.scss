@@ -1,0 +1,40 @@
+@use '../abstract/index' as i;
+.subheader{
+    margin-left: 100px;
+    *{
+        @include i.text('Barlow Condensed',normal,400,map-get($map: i.$font-size, $key: title),uppercase,34px);
+        letter-spacing: 4.725px;
+        display: inline;
+        color: white;
+    }
+    p:first-of-type{
+        
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+}
+.introduction{
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 165px;
+    top: 187px;
+    .firstparagraph{
+        @include i.text('Barlow Condensed',normal,400,map-get($map: i.$font-size, $key: title),uppercase,34px);
+        
+        letter-spacing: 4.725px;
+        color: i.$description-text;
+    }
+    .secondparagraph{
+        @include i.text('Bellefair',normal,400,map-get($map: i.$font-size, $key: main-title),uppercase,172px);
+        /* identical to box height */
+    }
+    .thirdparagraph{
+        @include i.text('Barlow',normal,400,map-get($map: i.$font-size, $key: description),none,32px);
+        color: i.$description-text;
+    }
+    *{
+        color: white;
+    }
+    
+}

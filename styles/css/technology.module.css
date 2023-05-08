@@ -1,0 +1,79 @@
+.name {
+  font-size: 56px;
+}
+
+.description {
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.techBtn {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: 80px;
+  height: 80px;
+}
+
+.introduction {
+  position: absolute;
+  width: 450px;
+  height: 382px;
+  left: 165px;
+  top: 187px;
+}
+.introduction .firstparagraph {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+}
+.introduction .secondparagraph {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 172px;
+  /* identical to box height */
+}
+.introduction .thirdparagraph {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: none;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+.introduction * {
+  color: white;
+}
+
+.btnHome {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+.btnHome:hover {
+  cursor: pointer;
+}
+.btnHome * {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 37px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+}/*# sourceMappingURL=technology.module.css.map */

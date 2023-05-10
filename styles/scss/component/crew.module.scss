@@ -1,4 +1,5 @@
 .crew{
+    top:300px;
     .firstparagraph{
         font-size: 32px !important;
         line-height: 37px !important;
@@ -10,9 +11,14 @@
         line-height: 64px !important;
     }
 }
+.crewImgContainer{
+    position: absolute;
+    right:50px;
+    top:135px;
+}
 .btnCrewContainer{
     position: absolute;
-    width: 132px;
+    width: 150px;
     height: 15px;
     left: 167px;
     bottom: 100px;
@@ -21,7 +27,7 @@
         height: 15px;
         background-color: white;
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 10px;
         border-radius: 50%;
         opacity: 0.17;
     }

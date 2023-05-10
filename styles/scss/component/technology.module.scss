@@ -15,9 +15,13 @@
     
     
 }
-
+.techImgContainer{
+    position: absolute;
+    right: 0;
+    top:150px;
+}
 .techbtnContainer{
-    margin-left: 165px;
+    margin-left: 100px;
     margin-top: 50px;
     *{
         color: white;
@@ -50,7 +54,7 @@
     position: absolute;
     width: 470px;
     height: 303px;
-    left: 325px;
-    top: 183px;
+    left: 225px;
+    top: 283px;
     
 }

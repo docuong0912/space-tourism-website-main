@@ -1,9 +1,36 @@
 @use '../abstract/index' as i;
-@mixin bgChange($bg:i.$home,$isMobile:false){
+@mixin bgChange($bg:i.$home){
     background-image: url($bg);
+    width: 100vw;
+    height: 100vh;
 }
 .body{
     @include bgChange();
-    width: 100vw;
-    height: 100vh;
+    @include i.media-mb{
+        @include bgChange(i.$home-mb);
+        
+    }
+    
+}
+.destinationBg{
+    
+    @include bgChange(i.$destination);
+    @include i.media-mb{
+        @include bgChange(i.$destination-mb);
+    }
+
+}
+.crewBg{
+    
+    @include bgChange(i.$crew);
+}
+.techBg{
+    
+    @include bgChange(i.$technology);
+}
+.crewMobile{
+    @include bgChange(i.$crew-mb);
+}
+.techMobile{
+    @include bgChange(i.$technology-mb);
 }

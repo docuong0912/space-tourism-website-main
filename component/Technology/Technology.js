@@ -12,7 +12,7 @@ const technology = () => {
    
   return (
     <>
-    <div>03 space lauch 101</div>
+    <div className={style.subheader}><p>03</p><p> space lauch 101</p></div>
       <span>
         {
           Array.from({length:data.length}).map((b,k)=>{

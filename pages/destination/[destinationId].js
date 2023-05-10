@@ -1,6 +1,8 @@
 import style from '../../styles/scss/main.module.scss';
 import Header from '@/component/Header/Header';
 import Destinaion from '@/component/Destinaion/Destinaion';
+import Image from 'next/image';
+import demo from '/Users/Asus/Documents/react/practive/space-tourism-website-main/product/starter-code/assets/destination/image-moon.png';
 export default function destination({planet}){
     return(
         <div>
@@ -23,15 +25,15 @@ export default function destination({planet}){
                 </span>
             </div>
         </span>
-        <span>
-            
+        <span className={style.desImgContainer}>
+            <Image src={planet.images} width={445} height={445} alt="Moon pic"/>
         </span>
     </div>
     );
 }
 destination.getLayout = function getLayout(page){
     return(
-        <div className={style.body}>
+        <div className={` ${style.destinationBg}`}>
             {page}
             <Header active={1}/>
             <Destinaion/>

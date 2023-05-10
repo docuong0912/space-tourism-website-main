@@ -1,10 +1,15 @@
 @use '../abstract/index' as i;
+.desImgContainer{
+    position: absolute;
+    top: 200px;
+    left:150px;
+}
 .destination{
     position: absolute;
     width: 445px;
     height: 472px;
-    left: 632px;
-    top: 150px;
+    left: 700px;
+    top: 247px;
 }
 .desName{
     font-size: 100px !important;
@@ -13,6 +18,7 @@
 .picker{
     float: right;
     margin-right: 300px;
+    margin-top: 50px;
     *{
         @include i.text("Barlow Condensed",normal,400,map-get($map: i.$font-size, $key: description),uppercase,2.7px);
         color: white;

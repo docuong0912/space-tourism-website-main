@@ -6,6 +6,10 @@
     position: absolute;
     right:100px;
     bottom: 100px;
+    @include i.media-mb{
+        width: 150px;
+        height: 150px;
+    }
     &:hover{
         cursor: pointer;
     }

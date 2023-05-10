@@ -6,3 +6,8 @@
     text-transform: $transform;
     line-height: $height;
 }
+@mixin media-mb{
+    @media only screen and (max-width:425px ) {
+        @content;
+    }
+}

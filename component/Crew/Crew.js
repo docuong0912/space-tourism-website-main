@@ -8,7 +8,7 @@ import Loader from '../shared/Loader';
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const Crew = () => {
   const router = useRouter();
-  const { data, error } = useSWR('http://localhost:8080/api/v1/crew', fetcher);
+  const { data, error } = useSWR('https://space-tourism-website-main-data-production.up.railway.app/api/v1/crew', fetcher);
   const [crew,setCrew] = useState(0);
   if (error) return <div>failed to load</div>
     if (!data) return <Loader/>

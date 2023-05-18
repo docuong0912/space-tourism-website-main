@@ -6,7 +6,7 @@ import Loader from '../shared/Loader';
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const technology = () => {
     const [active,setActive] = useState(0);
-    const { data, error } = useSWR('http://localhost:8080/api/v1/technology', fetcher);
+    const { data, error } = useSWR('https://space-tourism-website-main-data-production.up.railway.app/api/v1/technology', fetcher);
     if (error) return <div>failed to load</div>
     if (!data) return <Loader/>
    

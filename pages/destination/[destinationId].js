@@ -42,7 +42,7 @@ destination.getLayout = function getLayout(page){
     );
 }
 export async function getStaticPaths(){
-    const response = await fetch("http://localhost:8080/api/v1/destination");
+    const response = await fetch("https://space-tourism-website-main-data-production.up.railway.app/api/v1/destination");
     const data = await response.json();
     const paths = data.map(des=>({
             
@@ -58,7 +58,7 @@ export async function getStaticPaths(){
 }
 export async function getStaticProps(context){
     const {params} = context
-    const response = await fetch(`http://localhost:8080/api/v1/destination/${params.destinationId}`);
+    const response = await fetch(`https://space-tourism-website-main-data-production.up.railway.app/api/v1/destination/${params.destinationId}`);
     const data = await response.json();
     return{
         props:{

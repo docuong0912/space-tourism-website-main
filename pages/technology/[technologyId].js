@@ -9,7 +9,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 const Tech = () => {
     const router = useRouter();
     const name = router.query.technologyId;
-    const { data, error } = useSWR(`http://localhost:8080/api/v1/technology/${name}`, fetcher);
+    const { data, error } = useSWR(`https://space-tourism-website-main-data-production.up.railway.app/api/v1/technology/${name}`, fetcher);
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
   return (

@@ -2,7 +2,6 @@ import style from '../../styles/scss/main.module.scss';
 import Header from '@/component/Header/Header';
 import Destinaion from '@/component/Destinaion/Destinaion';
 import Image from 'next/image';
-import demo from '/Users/Asus/Documents/react/practive/space-tourism-website-main/product/starter-code/assets/destination/image-moon.png';
 export default function destination({planet}){
     return(
         <div>

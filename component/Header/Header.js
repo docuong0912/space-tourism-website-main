@@ -15,7 +15,7 @@ const Header = ({active}) => {
             <Image src={pic} width={48} height={48} alt='logo'/>
         </span>
         <span className={styles.pattern}></span>
-        <span className={styles.navLink}>
+        <div className={styles.navLink}>
             <ul>
                 <li className={`${styles.navEl} ${active == 0 ? styles.active:""}`}>
                      <Link  href="/">00 Home</Link>
@@ -30,7 +30,7 @@ const Header = ({active}) => {
                     <Link href="/technology">03 Technology</Link>
                 </li>
             </ul>
-        </span>
+        </div>
     </header>
   )
 }
